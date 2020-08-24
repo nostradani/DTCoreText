@@ -9,7 +9,8 @@
 #import "NSScanner+HTML.h"
 #import "NSCharacterSet+HTML.h"
 #import "DTColorFunctions.h"
-#import "NSString+HTML.h" 
+#import "NSString+HTML.h"
+#import "DTCompatibility.h"
 
 @implementation NSScanner (HTML)
 

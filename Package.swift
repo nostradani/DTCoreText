@@ -16,7 +16,7 @@ let package = Package(
             targets: ["DTCoreText"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/nostradani/DTFoundation.git", from: "1.7.15"),
+        .package(url: "https://github.com/nostradani/DTFoundation.git", from: "1.7.16"),
     ],
     targets: [
         .target(
@@ -24,7 +24,11 @@ let package = Package(
             dependencies: [
                 .product(name: "DTFoundation", package: "DTFoundation"),
             ],
-            path: "Core"),
+            path: "Core",
+            cSettings: [
+                .define("TARGET_OS_IPHONE=1", .when(platforms: [.iOS, .tvOS])),
+                .define("TARGET_OS_OSX=1", .when(platforms: [.macOS])),
+            ]),
         .testTarget(
             name: "DTCoreTextTests",
             dependencies: ["DTCoreText"]),
