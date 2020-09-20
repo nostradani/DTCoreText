@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "DTFoundation",
+        "repositoryURL": "https://github.com/nostradani/DTFoundation.git",
+        "state": {
+          "branch": null,
+          "revision": "62ad6ad823c97b1649a4adc88b7f05d7db1a5141",
+          "version": "1.7.16"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
