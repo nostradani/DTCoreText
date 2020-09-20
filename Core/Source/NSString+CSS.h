@@ -6,7 +6,8 @@
 //  Copyright (c) 2012 Drobnik.com. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import <DTCoreText/DTCompatibility.h>
 
 @class DTColor;
 
